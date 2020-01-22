@@ -69,7 +69,7 @@ public class JpaConfig {
 		factoryBean.setPackagesToScan("com.apress.prospring5.ch8.entities");
 		factoryBean.setDataSource(dataSource());
 		Properties hp = hibernateProperties();
-		System.out.println("hp="+hp);
+		System.out.println("\n\n\n\nhp="+hp+"\n\n\n");
 		factoryBean.setJpaProperties(hp);
 		factoryBean.setJpaVendorAdapter(jpaVendorAdapter());
 		factoryBean.afterPropertiesSet();

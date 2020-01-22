@@ -195,3 +195,9 @@ dependencies {
   testImplementation testing.junit
 }
 
+// https://stackoverflow.com/questions/40954017/gradle-how-to-get-output-from-test-stderr-stdout-into-console
+test {
+    dependsOn cleanTest
+    testLogging.showStandardStreams = true
+}
+
